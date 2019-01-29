@@ -30,5 +30,6 @@
 ## API
 
 **condition 'assertion-error ...**
+
 **function (get-stack-trace)**
 
