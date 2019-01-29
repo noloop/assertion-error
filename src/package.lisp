@@ -2,6 +2,6 @@
    (defpackage #:noloop.assertion-error
        (:use #:common-lisp)
          (:nicknames #:assertion-error)
-	   (:export #:FORM1
-		    #:FORM2))
+	   (:export #:assertion-error
+		    #:get-stack-trace))
 (in-package #:noloop.assertion-error)

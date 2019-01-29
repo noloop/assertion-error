@@ -8,17 +8,16 @@
   :homepage "https://github.com/noloop/assertion-error"
   :bug-tracker "https://github.com/noloop/assertion-error/issues"
   :source-control (:git "git@github.com:noloop/assertion-error.git")
-  :description "Error pattern for assertion libraries."
+  :description "Error pattern for assertion libraries in Common Lisp."
   :components ((:module "src"
                 :components
                 ((:file "package")
-                 (:file "file1" :depends-on ("package"))
-                 (:file "file2" :depends-on ("package" "file1")))))
+                 (:file "assertion-error" :depends-on ("package")))))
   :long-description
   #.(uiop:read-file-string
      (uiop:subpathname *load-pathname* "README.md"))
   :in-order-to ((test-op (test-op "assertion-error/test"))))
-
+#|
 (defsystem :assertion-error/test
   :author "noloop <noloop@zoho.com>"
   :maintainer "noloop <noloop@zoho.com>"
@@ -29,3 +28,4 @@
                 :components
                 ((:file "test-run"))))
   :perform (test-op (o c) ())))
+|#
