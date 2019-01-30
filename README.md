@@ -86,7 +86,7 @@ Use assertion-error to build your test runner, where it can capture the errors o
 
 ## API
 
-All generic functions below returns some information from the assertion-error condition. They have a mandatory argument that is the assertion-error condition. Check out the [catch assertion-error example](https://github.com/noloop/assertion-error#catch-assertion-error) to understand how to use them.
+All generic functions below returns some information from the assertion-error condition. They have a required argument that is the assertion-error condition. Check out the [catch assertion-error example](https://github.com/noloop/assertion-error#catch-assertion-error) to understand how to use them.
 
 **condition assertion-error**
 
