@@ -1,6 +1,6 @@
 # assertion-error
 
-### Error pattern for assertion libraries in Common Lisp.
+### _Error pattern for assertion libraries in Common Lisp._
 
 ## Getting Started in assertion-error
 
