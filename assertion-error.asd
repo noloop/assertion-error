@@ -18,7 +18,7 @@
   #.(uiop:read-file-string
      (uiop:subpathname *load-pathname* "README.md"))
   :in-order-to ((test-op (test-op "assertion-error/test"))))
-#|
+
 (defsystem :assertion-error/test
   :author "noloop <noloop@zoho.com>"
   :maintainer "noloop <noloop@zoho.com>"
@@ -27,6 +27,5 @@
   :depends-on (:assertion-error)
   :components ((:module "test"
                 :components
-                ((:file "test-run"))))
-  :perform (test-op (o c) ())))
-|#
+                ((:file "assertion-error-test"))))
+  :perform (test-op (op system) (funcall (read-from-string "assertion-error-test::run"))))
