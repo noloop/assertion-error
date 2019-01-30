@@ -88,17 +88,17 @@ Use assertion-error to build your test runner, where it can capture the errors o
 
 All generic functions below returns some information from the assertion-error condition. They have a required argument that is the assertion-error condition. Check out the [catch assertion-error example](https://github.com/noloop/assertion-error#catch-assertion-error) to understand how to use them.
 
-**condition assertion-error**
+condition **assertion-error**
 
-**function (get-stack-trace)**
+function **(get-stack-trace)**
 
-**generic-function (assertion-error-message c)**
+generic-function **(assertion-error-message c)**
 
-**generic-function (assertion-error-result c)**
+generic-function **(assertion-error-result c)**
 
-**generic-function (assertion-error-actual c)**
+generic-function **(assertion-error-actual c)**
 
-**generic-function (assertion-error-expected c)**
+generic-function **(assertion-error-expected c)**
 
-**generic-function (assertion-error-stack c)**
+generic-function **(assertion-error-stack c)**
 
