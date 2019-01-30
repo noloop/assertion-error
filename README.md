@@ -8,32 +8,46 @@
 
 The assertion-error system has only one dependency, which is the [dissect](https://github.com/Shinmera/dissect) system, I do not know if it will depend forever on this library, but for now it is necessary, since Common Lisp does not have a standard to get the stack trace.
 
-1 - Download the dissect system
+**1 - Download the dissect system**
+
 By quicklisp:
 
+```
 http://quickdocs.org/dissect/
-
+```
 or directly from github:
 
+```
 git clone https://github.com/Shinmera/dissect.git
+```
 
-2 - Download assertion-error system
+**2 - Download assertion-error system**
+
 By quicklisp:
 
+```
 IN PROGRESS...
+```
 
 or directly from github:
 
+```
 git clone https://github.com/noloop/assertion-error.git
+```
 
-3 - Install assertion-error
+**3 - Install assertion-error**
+
 By quicklisp:
 
+```
 IN PROGRESS...
+```
 
 or directly from asdf:
 
+```lisp
 (asdf:load-system :assertion-error)
+```
 
 Note: Remember to configure asdf to find your directory where you downloaded the libraries (asdf call them "systems") above, if you do not know how to make a read at:https://lisp-lang.org/learn/writing-libraries.
 
