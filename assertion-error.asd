@@ -9,6 +9,7 @@
   :bug-tracker "https://github.com/noloop/assertion-error/issues"
   :source-control (:git "git@github.com:noloop/assertion-error.git")
   :description "Error pattern for assertion libraries in Common Lisp."
+  :depends-on (:dissect)
   :components ((:module "src"
                 :components
                 ((:file "package")
