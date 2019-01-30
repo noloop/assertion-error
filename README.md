@@ -86,7 +86,17 @@ Use assertion-error to build your test runner, where it can capture the errors o
 
 ## API
 
-**condition 'assertion-error ...**
+**condition assertion-error**
 
 **function (get-stack-trace)**
+
+**generic function (assertion-error-message)**
+
+**generic function (assertion-error-result)**
+
+**generic function (assertion-error-actual)**
+
+**generic function (assertion-error-expected)**
+
+**generic function (assertion-error-stack)**
 
