@@ -1,10 +1,10 @@
 # assertion-error
 
-## Error pattern for assertion libraries in Common Lisp.
+### Error pattern for assertion libraries in Common Lisp.
 
-### Getting Started in assertion-error
+## Getting Started in assertion-error
 
-#### Installation
+### Installation
 
 The assertion-error system has only one dependency, which is the [dissect](https://github.com/Shinmera/dissect) system, I do not know if it will depend forever on this library, but for now it is necessary, since Common Lisp does not have a standard to get the stack trace.
 
@@ -49,9 +49,9 @@ or directly from asdf:
 (asdf:load-system :assertion-error)
 ```
 
-Note: Remember to configure asdf to find your directory where you downloaded the libraries (asdf call them "systems") above, if you do not know how to make a read at:https://lisp-lang.org/learn/writing-libraries.
+_**Note: Remember to configure asdf to find your directory where you downloaded the libraries (asdf call them "systems") above, if you do not know how to make a read at: https://lisp-lang.org/learn/writing-libraries.**_
 
-#### Create assertion with assertion-error
+### Create assertion with assertion-error
 
 Use assertion-error when constructing your assertion library:
 
@@ -74,7 +74,7 @@ Use assertion-error when constructing your assertion library:
 
 ```
 
-#### Catch assertion-error
+### Catch assertion-error
 
 Use assertion-error to build your test runner, where it can capture the errors of your assertion library which one also uses assertion-error:
 
