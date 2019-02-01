@@ -32,7 +32,7 @@
 (defun run ()
    (handler-case (is-t? nil)
      (assertion-error (c) 
-       (format t "Test result: ~a" (when (string= "NIL EQUAL T" (assertion-error-message c))
+       (format t "Test result: ~a" (and (string= "NIL EQUAL T" (assertion-error-message c))
                                          (equal nil (assertion-error-result c))
                                          (equal nil (assertion-error-actual c)) 
                                          (equal t (assertion-error-expected c)))))))
