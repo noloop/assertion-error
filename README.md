@@ -49,7 +49,7 @@ or directly from asdf:
 (asdf:load-system :assertion-error)
 ```
 
-_**Note: Remember to configure asdf to find your directory where you downloaded the libraries (asdf call them "systems") above, if you do not know how to make a read at: https://lisp-lang.org/learn/writing-libraries.**_
+_**Note: Remember to configure asdf to find your directory where you downloaded the libraries (asdf call them "systems") above, if you do not know how to make a read at: https://common-lisp.net/project/asdf/asdf/Configuring-ASDF-to-find-your-systems.html or https://lisp-lang.org/learn/writing-libraries.**_
 
 ### Create assertion with assertion-error
 
@@ -92,13 +92,13 @@ condition **assertion-error**
 
 function **(get-stack-trace)**
 
-generic-function **(assertion-error-message c)**
+condition :reader **(assertion-error-message c)**
 
-generic-function **(assertion-error-result c)**
+condition :reader **(assertion-error-result c)**
 
-generic-function **(assertion-error-actual c)**
+condition :reader **(assertion-error-actual c)**
 
-generic-function **(assertion-error-expected c)**
+condition :reader **(assertion-error-expected c)**
 
-generic-function **(assertion-error-stack c)**
+condition :reader **(assertion-error-stack c)**
 
