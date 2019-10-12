@@ -4,11 +4,13 @@
 
 ## Getting Started in assertion-error
 
-### Installation
+### Dependencies
 
-The assertion-error system has only one dependency, which is the [dissect](https://github.com/Shinmera/dissect) system, I do not know if it will depend forever on this library, but for now it is necessary, since Common Lisp does not have a standard to get the stack trace.
+The assertion-error system has only one dependency, which is the [dissect](https://github.com/Shinmera/dissect) system,
+I do not know if it will depend forever on this library, but for now it is necessary, since Common Lisp does not have a
+standard to get the stack trace.
 
-**1 - Download the dissect system**
+**Download the dissect system**
 
 By quicklisp:
 
@@ -21,29 +23,23 @@ or directly from github:
 git clone https://github.com/Shinmera/dissect.git
 ```
 
-**2 - Download assertion-error system**
+### Download and load
 
-By quicklisp:
+**1 - Load assertion-error system by quicklisp**
 
 ```
-IN PROGRESS...
+(ql:quickload :assertion-error)
 ```
 
-or directly from github:
+**2 - Download and load assertion-error system by github and asdf**
+
+Download directly from github:
 
 ```
 git clone https://github.com/noloop/assertion-error.git
 ```
 
-**3 - Install assertion-error**
-
-By quicklisp:
-
-```
-IN PROGRESS...
-```
-
-or directly from asdf:
+and load by ASDF:
 
 ```lisp
 (asdf:load-system :assertion-error)

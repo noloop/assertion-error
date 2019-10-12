@@ -3,8 +3,8 @@
 (defsystem :assertion-error
   :author "noloop <noloop@zoho.com>"
   :maintainer "noloop <noloop@zoho.com>"
-  :license "GNU General Public License v3.0"
-  :version "0.0.0"
+  :license "GPLv3"
+  :version "0.1.0"
   :homepage "https://github.com/noloop/assertion-error"
   :bug-tracker "https://github.com/noloop/assertion-error/issues"
   :source-control (:git "git@github.com:noloop/assertion-error.git")
