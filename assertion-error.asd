@@ -14,9 +14,6 @@
                 :components
                 ((:file "package")
                  (:file "assertion-error" :depends-on ("package")))))
-  :long-description
-  #.(uiop:read-file-string
-     (uiop:subpathname *load-pathname* "README.md"))
   :in-order-to ((test-op (test-op "assertion-error/test"))))
 
 (defsystem :assertion-error/test
